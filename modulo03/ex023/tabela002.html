@@ -12,6 +12,10 @@
             width: 500px;
             border-collapse: collapse;
         }
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+        }
         caption{
             font-size: 1.5em;
             font-weight: bold;
@@ -22,9 +26,11 @@
             background-color: rgb(49, 49, 49);
             color: white;
         }
-        td,th{
-            border: 1px solid black;
-            padding: 10px;
+        tbody tr:nth-child(odd)/*Impar ou n2-1*/{
+            background-color: lightgray;
+        }
+        tbody tr:nth-child(even)/*Par ou n2*/{
+            background-color: white;
         }
         td.num{
             text-align: right;
